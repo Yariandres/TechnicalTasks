@@ -1,0 +1,16 @@
+.btnLoad {
+    text-align: center;
+
+    .item__btn {
+      font-family: $font-primary;
+      text-align: center;     
+      font-size: 3rem;
+      font-weight: 200;      
+      text-transform: uppercase;    
+      color: $color-primary;
+      background-color: #074f57;
+      border: none;
+      width: 48%;
+    }     
+    
+}

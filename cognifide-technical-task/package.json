@@ -1,0 +1,14 @@
+{
+  "name": "technical-task",
+  "version": "1.0.0",
+  "description": "splashbase image app",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Yari Andres Herrera",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

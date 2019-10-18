@@ -1,0 +1,32 @@
+// RESETS & GLOBAL
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px
+
+  // @include response(phone) {
+  //   font-size: 50%;
+  // }
+  @include response(tab-port) {
+    font-size: 56.25%;
+  }
+  @include response(tab-land) {
+    font-size: 50%;
+  }
+  @include response(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  box-sizing: border-box; 
+}
+
+

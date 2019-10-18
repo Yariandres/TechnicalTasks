@@ -1,0 +1,88 @@
+// APP CSS
+.header {
+  backface-visibility: hidden;
+  position: relative;
+
+  &__heading-text {
+    position: absolute;
+    padding-top: 17rem;
+    left: 49.3%;
+    transform: translate(-50%, -50%);
+    z-index: -1000;    
+
+    .heading-primary--main {
+      display: block;
+      font-family: $font-secondary;
+      font-weight: 200;
+      font-size: 12rem;
+       
+      animation-name: moveInLeft;
+      animation-duration: 2s;
+
+      @include response(big-desktop) {
+        font-size: 12rem;     
+      }
+
+      @include response(tab-land) {
+        font-size: 10rem;
+        color: red;
+      }
+      
+      @include response(tab-port) {
+        font-size: 7rem;
+        color: yellow;        
+      }
+
+      @include response(phone) {
+        font-size: 4.5rem;
+        color: pink;        
+      }
+      
+      @include response(phone-xs) {
+        font-size: 3.5rem;
+        color: orangered;        
+      }
+    }
+  }
+
+  // FILTER BUTTONS
+  .header__filter-buttons {
+    text-align: center;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    padding-top: 13.1rem;
+    cursor: pointer;
+
+    a {    
+      color: $botton-primary;
+      font-size: 2rem;
+      font-family: inherit;
+      font-weight: 200;
+      text-decoration: none;
+      padding: 0.5rem 2.5rem;
+      margin: 1rem 0.5rem;
+      border: 1px solid $botton-primary;
+      border-radius: 2.0rem;
+      z-index: 100;       
+
+      display: inline-block;
+      transition: all .3s;
+
+      @include response(phone) {      
+        padding: 0.5rem 2.0rem;
+      }
+
+      @include response(phone-xs) {
+        padding: 0.5rem 1.0rem;   
+      }
+    }
+    
+
+    .btn:hover {
+      color: $color-primary;
+      background-color: $botton-primary;   
+    }
+      
+  }  
+  
+}
