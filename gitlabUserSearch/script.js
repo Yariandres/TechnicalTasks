@@ -1,7 +1,6 @@
 
 let users = [];
 
-
 window.onload = async () => {
   const url = "https://gitlab.com/api/v4/users";
 
@@ -24,9 +23,24 @@ createList = userList => {
                     <div class="col-md-3"><img src="${user.avatar_url}"></div>
                     <div class="col-md-3">Name: ${user.name}</div>
                     <div class="col-md-3">User Name: ${user.username}</div>
-                    <div class="col-md-3">GitLab url: ${user.web_url}</div>                    
-                </div>`
-
+                    <div class="col-md-3">GitLab url: ${user.web_url}</div>
+                    <div class="col-md-3">GitLab url: ${user.id}</div>                  
+                </div>
+              `
     )
     .join("");
+};
+
+applyFilter = () => {
+  let searchQuery = document.querySelector("#searchQuery").value;
+  let searchType = document.querySelector("#searchType").value;
+
+  if (searchQuery.length >= 1) {
+    var filteredUsers = users.filter(user => user[searchType].includes(searchQuery));
+    createList(filteredUsers);
+
+    console.log(filteredUsers);
+  } else {
+    createList(users);
+  }
 };
