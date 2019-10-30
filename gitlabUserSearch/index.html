@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gitlab Users</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- select search type  -->
+    <select id="searchType">
+      <option>Name</option>
+      <option>Id</option>
+      <option>Username</option>
+    </select>
+
+    <!-- search for a user -->
+    <input type="text" id="searchQuery" placeholder="Search here" onkeyup="applyFilter()">
+  </div>
+
+  <div class="container" id="users"></div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
