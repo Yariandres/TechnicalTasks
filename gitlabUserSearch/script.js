@@ -19,12 +19,12 @@ window.onload = async () => {
 createList = userList => {
   document.querySelector("#users").innerHTML = userList
     .map(
-      user => `<div class="row">                    
-                    <div class="col-md-3"><img src="${user.avatar_url}"></div>
-                    <div class="col-md-3">Name: ${user.name}</div>
-                    <div class="col-md-3">User Name: ${user.username}</div>
-                    <div class="col-md-3">GitLab url: ${user.web_url}</div>
-                    <div class="col-md-3">GitLab url: ${user.id}</div>                  
+      user => `<div class="cards">                    
+                    <div class="card-img"><img src="${user.avatar_url}"></div>
+                    <div class="card-name"><strong>Name:</strong> ${user.name}</div>
+                    <div class="card-username"><strong>User Name:</strong> ${user.username}</div>
+                    <div class="card-url"><strong>GitLab url:</strong> ${user.web_url}</div>
+                    <div class="card-id"><strong>GitLab url:</strong> ${user.id}</div>                  
                 </div>
               `
     )
@@ -36,7 +36,7 @@ applyFilter = () => {
   let searchType = document.querySelector("#searchType").value;
 
   if (searchQuery.length >= 1) {
-    var filteredUsers = users.filter(user => user[searchType].includes(searchQuery));
+    let filteredUsers = users.filter(user => user[searchType].includes(searchQuery));
     createList(filteredUsers);
 
     console.log(filteredUsers);
