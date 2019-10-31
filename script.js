@@ -11,8 +11,6 @@ window.onload = async () => {
   });
 
   users = await response.json();
-  console.log(users);
-
   createList(users);
 };
 
@@ -39,7 +37,6 @@ applyFilter = () => {
     let filteredUsers = users.filter(user => user[searchType].includes(searchQuery));
     createList(filteredUsers);
 
-    console.log(filteredUsers);
   } else {
     createList(users);
   }
