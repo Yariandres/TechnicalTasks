@@ -26,7 +26,6 @@ body {
 **********************************************/
 .container {
   text-align: center;
-
   padding-bottom: 40px;
 }
 
@@ -34,7 +33,6 @@ body {
   color: var(--front-primary);
   font-weight: 300;
   font-size: 46px;
-  text-align: center;
   padding: 40px 0;
 }
 
@@ -55,7 +53,7 @@ body {
 .select-type:focus,
 .search-field:focus {
   outline: none;
-  border: 1px solid rgb(40, 185, 166);
+  border: 1px solid #28b9a6;
 }
 
 .select-type {
