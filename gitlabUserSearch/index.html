@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gitlab Users Search</title>
+  <!-- custom -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- google fonts roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1 class="search-title">Gitlab User Search Machine</h1>
+    <!-- select search type  -->
+    <select id="searchType" class="select-type">
+      <option>name</option>
+      <option>username</option>
+    </select>
+
+    <!-- search for a user -->
+    <input type="text" id="searchQuery" class="search-field" placeholder="Search here" onkeyup="applyFilter()">
+  </div>
+
+  <div id="users">
+    <!-- dynamic content here -->
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

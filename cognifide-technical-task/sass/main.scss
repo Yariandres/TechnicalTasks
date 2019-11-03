@@ -1,0 +1,19 @@
+// VARIABLES & FUNCTIONS & MIXINGS
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// RESETS + ANIMATION + TYPOGRAPHY
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+
+// COMPONENTS
+@import "components/button";
+@import "components/loader";
+@import "components/modal";
+
+
+//SPA LAYOUT
+@import "layout/header";
+@import "layout/gallery";
+

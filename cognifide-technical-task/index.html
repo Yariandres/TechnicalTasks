@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Image SPA</title>
+  ​
+  <!-- google fonts Montserrat + Allura-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet" />
+  ​
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+​
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__heading-text">
+      <h1 class="heading-primary--main">Photo Gallery</h1>
+    </div>
+    <!-- FILTER BUTONS -->
+    <div class="header__filter-buttons">
+      <a href="#" class="btn header__btn" onclick="applyFilter()">show all</a>
+      ​
+      <a href="#" class="btn header__btn" onclick="applyFilter('unsplash')">unsplash</a>
+      ​
+      <a href="#" class="btn header__btn" onclick="applyFilter('littlevisuals')">littlevisuals</a>
+      ​
+      <a href="#" class="btn header__btn" onclick="applyFilter('travelcoffeebook')">travelcoffeebook</a>
+      ​
+      <a href="#" class="btn header__btn" onclick="applyFilter('jaymantri')">jaymantri</a>
+    </div>
+  </header>
+  ​
+  <section class="loader">
+    <img src="img/Spinner.gif" alt="Loading..." />
+  </section>
+  ​
+  <!-- GALLERY  -->
+  <section class="gellery">
+    <!-- first row
+    <figure class="gellery__item gellery__item--1">
+      <img src="img/download-1.png" alt="Gallery image" class="gellery__img">
+      <div class="overlay overlayLeft">
+        <div class="overlay__text">#unsplash</div>
+      </div>
+    </figure>
+​
+​
+​
+    <figure class="gellery__item gellery__item--2">
+      <img src="img/download-2.png" alt="Gallery image" class="gellery__img">
+      <div class="overlay overlayLeft">
+        <div class="overlay__text">#unsplash</div>
+      </div>
+    </figure>
+​
+    <figure class="gellery__item gellery__item--3">
+      <img src="img/download-1.png" alt="Gallery image" class="gellery__img">
+      <div class="overlay overlayLeft">
+        <div class="overlay__text">#unsplash</div>
+      </div>
+    </figure>
+​
+    <figure class="gellery__item gellery__item--4">
+      <img src="img/download-2.png" alt="Gallery image" class="gellery__img">
+      <div class="overlay overlayLeft">
+        <div class="overlay__text">#unsplash</div>
+      </div>
+    </figure> -->
+    ​
+    <!-- second row -->
+    <!-- <figure class="gellery__item gellery__item--5">
+      <img src="img/download-1.png" alt="Gallery image" class="gellery__img">
+      <div class="overlay overlayBottom">
+        <div class="overlay__text">#unsplash</div>
+      </div>
+    </figure> -->
+    ​
+    <!-- <figure class="gellery__item gellery__item--6">
+      <img src="img/download-2.png" alt="Gallery image" class="gellery__img">
+      <div class="overlay overlayLeft">
+        <div class="overlay__text">#unsplash</div>
+      </div>
+    </figure> -->
+    ​
+    <!-- <figure class="gellery__item gellery__item--7">
+      <img src="img/download-1.png" alt="Gallery image" class="gellery__img">
+      <div class="overlay overlayLeft">
+        <div class="overlay__text">#unsplash</div>
+      </div>
+    </figure>
+​
+    <figure class="gellery__item gellery__item--8">
+      <img src="img/download-2.png" alt="Gallery image" class="gellery__img">
+      <div class="overlay overlayLeft">
+        <div class="overlay__text">#unsplash</div>
+      </div>
+    </figure> -->
+    ​
+    <!-- third row -->
+    <!-- <figure class="gellery__item gellery__item--9">
+      <img src="img/download-1.png" alt="Gallery image" class="gellery__img">
+      <div class="overlay overlayBottom">
+        <div class="overlay__text">#unsplash</div>
+      </div>
+    </figure>
+​
+    <figure class="gellery__item 
+    gellery__item--10" data-text="#unsplash">
+      <img src="img/download-2.png" alt="Gallery image" class="gellery__img">
+      <div class="overlay overlayLeft">
+        <div class="overlay__text">#unsplash</div>
+      </div>
+    </figure> -->
+
+  </section>
+
+
+  <section class="btnLoad">
+    <button class="item__btn" onclick="increaseLength()">
+      show more
+    </button>
+  </section>
+
+  <!-- MODAL -->
+
+  <!-- modal box -->
+  <div class="modal-section">
+    <button id="modalBtn" class="button">
+      <!-- I'am hidden -->
+    </button>
+
+    <div id="simpleModal" class="modal">
+      <span id="closeBtn">&times;</span>
+      <!-- modalcontent -->
+      <div class="modal-content">
+
+        <!-- close modal -->
+        <img id="modalImage" />
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+
+<!-- CUSTOM SCRIPTS -->
+<script src="app.js"></script>
+
+</html>

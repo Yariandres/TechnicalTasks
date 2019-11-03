@@ -1,0 +1,20 @@
+## TASKS TO DO ##
+
+[] Add event handler
+[] Get input values
+[] Add the new item to our data structure
+[] Add the new item to the UI
+[] Update the UI 
+
+## STRUCTURE ##
+
+MODULES-UI
+[] Get input values
+[] Add the new item to the UI
+[] Update the UI
+
+MODULES-DATA
+[] Add the new item to our data structure
+
+MODULE-CONTROLLER
+[] Add event handler
