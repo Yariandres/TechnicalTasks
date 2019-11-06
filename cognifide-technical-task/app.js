@@ -35,16 +35,15 @@ createList = (imageList, length) => {
     figure.classList.add("gellery__item", "div" + indexPlussOne);
     // adding img and overlay tags to figure
     figure.innerHTML += `                      
-                            <img id="modalImg" src="${image.url}" alt="Gallery image" class="gellery__img">
-                            
-                            <div class="overlay overlayLeft">
-                              <div  class="overlay__text">#${image.site}</div>                             
-                            </div>                     
+                          <img i d="modalImg" src="${image.url}" alt="Gallery image" class="gellery__img">
+                          
+                          <div class="overlay overlayLeft">
+                            <div  class="overlay__text">#${image.site}</div>                             
+                          </div>                    
                         `;
     myFigure.appendChild(figure);
 
     figure.querySelector(".overlay").addEventListener("click", () => {
-
       var modal = document.querySelector("#simpleModal");
 
       var img = document.querySelector("#modalImage");
