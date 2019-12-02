@@ -1,0 +1,14 @@
+{
+  "name": "letsgetdrinks",
+  "version": "1.0.0",
+  "description": "We would like you to create a web application which retrieves data from the API of the drinks app, and showcases the events",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Yari Andres Herrera",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
