@@ -1,2 +1,13 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
 body {
-  background-color: pink; }
+  font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box; }

@@ -1,5 +1,7 @@
-$body-color: pink;
+// VARIABLES & FUNCTIONS & MIXINGS
+@import "abstracts/variables";
 
-body {
-  background-color: $body-color;
-}
+// RESETS + ANIMATION + TYPOGRAPHY
+@import "base/base";
+
+// COMPONENTS
