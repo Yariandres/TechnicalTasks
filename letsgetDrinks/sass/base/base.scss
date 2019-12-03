@@ -14,4 +14,81 @@ html {
 body {
   font-family: $font-main;
   box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+.header {
+  background-color: $body-dark;
+  height: 50vh;
+  position: relative;
+
+  &__logo {
+    width: auto;
+    height: 10%;
+    margin: 1rem;
+  }
+
+  &__main {
+    color: $font-heading-light;
+    font-size: 5rem;
+    font-family: fantasy;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.search {
+  background-color: $font-heading-dark;
+
+  &__input {
+    font-size: 2.5rem;
+  }
+
+  &__type {
+    font-size: 1.5rem;
+  }
+}
+
+.card-wrap {
+  border-radius: 1.5rem;
+
+  padding: 1rem;
+
+  &__creatortext {
+    top: 1rem;
+    display: inline;
+  }
+
+  &__creator {
+    border-radius: 50%;
+    border: 5px solid $body-light;
+    display: inline;
+  }
+
+  &__guest {
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__guest:hover {
+    border: 5px solid $font-heading-light;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__avatar:hover {
+    border: 2px solid $font-heading-dark;
+  }
+}
+
+.card-wrap:hover {
+  -webkit-box-shadow: -2px 7px 14px 1px rgba(199, 199, 199, 1);
+  -moz-box-shadow: -2px 7px 14px 1px rgba(199, 199, 199, 1);
+  box-shadow: -2px 7px 14px 1px rgba(199, 199, 199, 1);
 }

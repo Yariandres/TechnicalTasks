@@ -10,4 +10,55 @@ html {
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 1.5rem; }
+
+.header {
+  background-color: #bb6b62;
+  height: 50vh;
+  position: relative; }
+  .header__logo {
+    width: auto;
+    height: 10%;
+    margin: 1rem; }
+  .header__main {
+    color: #e5cb90;
+    font-size: 5rem;
+    font-family: fantasy;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+.search {
+  background-color: #5dab7c; }
+  .search__input {
+    font-size: 2.5rem; }
+  .search__type {
+    font-size: 1.5rem; }
+
+.card-wrap {
+  border-radius: 1.5rem;
+  padding: 1rem; }
+  .card-wrap__creatortext {
+    top: 1rem;
+    display: inline; }
+  .card-wrap__creator {
+    border-radius: 50%;
+    border: 5px solid #5dab7c;
+    display: inline; }
+  .card-wrap__guest {
+    border-radius: 50%;
+    cursor: pointer; }
+  .card-wrap__guest:hover {
+    border: 5px solid #e5cb90; }
+  .card-wrap__avatar {
+    border-radius: 50%;
+    cursor: pointer; }
+  .card-wrap__avatar:hover {
+    border: 2px solid #5dab7c; }
+
+.card-wrap:hover {
+  -webkit-box-shadow: -2px 7px 14px 1px #c7c7c7;
+  -moz-box-shadow: -2px 7px 14px 1px #c7c7c7;
+  box-shadow: -2px 7px 14px 1px #c7c7c7; }

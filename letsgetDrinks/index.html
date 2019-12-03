@@ -23,35 +23,48 @@
     />
   </head>
   <body>
-    <div class="jumbotron">
-      <h1 class="text-center display-1">Find your favourite events</h1>
+    <div class="header">
+      <img
+        src="img/cocktail-icon-large.png"
+        alt="beer icon"
+        class="header__logo"
+      />
+      <h1 class="text-center header__main">
+        Find your favourite events
+      </h1>
     </div>
 
-    <div class="">
-      <!-- select search type  -->
+    <div class="search">
+      <div class="container">
+        <!-- select search type  -->
+        <form class="form-inline py-5">
+          <!-- search for a user -->
+          <div class="form-group ml-2">
+            <input
+              type="text"
+              id="searchQuery"
+              class="search__input form-control"
+              onkeyup="applyFilter()"
+            />
+          </div>
 
-      <form class="form-inline my-5">
-        <!-- search for a user -->
-        <div class="form-group ml-2">
-          <input
-            type="text"
-            id="searchQuery"
-            class="search-field form-control"
-            placeholder="Search here"
-            onkeyup="applyFilter()"
-          />
-        </div>
+          <div class="form-group ml-2">
+            <label class="mx-4" for="filter">Filter by:</label>
+            <select
+              id="searchType"
+              class="search__type form-control"
+              id="filter"
+            >
+              <option>title</option>
+              <option>type</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
 
-        <div class="form-group ml-2">
-          <label class="mx-4" for="filter">Filter by:</label>
-          <select id="searchType" class="select-type form-control" id="filter">
-            <option>title</option>
-            <option>type</option>
-          </select>
-        </div>
-      </form>
-
-      <div id="event-list"></div>
+    <div class="container">
+      <div class="row" id="event-list"></div>
     </div>
 
     <script
